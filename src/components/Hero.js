@@ -141,15 +141,15 @@ const Hero = () => {
           <div className="card my-4 mx-auto p-2" id="tarjeta" style={{width: 18 + 'em'}}>
               <img src={personaje.image} className="card-img-top" alt="Personaje de Rick and Morty"></img>
               <div className="card-body">
-                  <h4 className="card-title">{personaje.name}</h4>
-                  <h6>Species: {personaje.species}</h6>
-                  <h6>Status: {personaje.status}</h6>
+                  <h4 className="card-title rounded-pill mb-3 pb-3" title="Name">{personaje.name}</h4>
+                  <h6 className="card-title">Species: {personaje.species}</h6>
+                  <h6 className="card-title">Status: {personaje.status}</h6>
                   <h6 className="card-title">Gender: {personaje.gender}</h6>
-                  <h6>Origin: {personaje.origin.name}</h6>
-                  <h6>Location: {personaje.location.name}</h6>
+                  <h6 className="card-title">Origin: {personaje.origin.name}</h6>
+                  <h6 className="card-title">Location: {personaje.location.name}</h6>
                   <p className="card-text"></p>
                   <div className="btn-group" role="group" aria-label="Basic example">
-                      <button type="button" className="btn btn-dark" onClick={cambiarPersonaje}>Change</button>
+                      <button type="button" className="btn btn-dark" onClick={cambiarPersonaje}>Reload</button>
                   </div>
               </div>
           </div>

@@ -6,10 +6,44 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /*background: linear-gradient(to right,#afc281,#acd8ac);*/
-  background-color:  #353535 ;
+  background-color:  #353535;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h4{
+  opacity: 1;
+  transition-property: opacity, border;
+  transition-duration: 0.4s;
+}
+
+h4:hover{
+  opacity: 0.6;
+  border-bottom-width: 1px;
+  border-bottom-style: groove;
+}
+
+h6{
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 0.4s;
+}
+
+h6:hover{
+  opacity: 0.6;
+  border-right-width: 1px;
+  border-right-style: groove;
+}
+
+img{
+  filter: brightness(95%);
+  transition-duration: 0.3s;
+  transition-property: filter;
+}
+
+img:hover{
+  filter: brightness(105%); 
 }
