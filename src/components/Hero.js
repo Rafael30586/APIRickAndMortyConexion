@@ -43,7 +43,7 @@ const Hero = () => {
         switch(tema){
             case 1: _tarjeta.style.backgroundColor = "#cdf13c";
             _tarjeta.style.color = letrasOscuras;break;
-            case 2: _tarjeta.style.backgroundColor = "##4b1d62";
+            case 2: _tarjeta.style.backgroundColor = "#4b1d62";
             _tarjeta.style.color = letrasClaras;break;
             case 3: _tarjeta.style.backgroundColor = "#136bd2";
             _tarjeta.style.color = letrasClaras;break;
@@ -72,7 +72,7 @@ const Hero = () => {
             case 15: _tarjeta.style.backgroundColor = "#fc3358";
             _tarjeta.style.color = letrasClaras;break;
             case 16: _tarjeta.style.backgroundColor = "#939923";
-            _tarjeta.style.color = letrasClaras;break;
+            _tarjeta.style.color = letrasOscuras;break;
             case 17: _tarjeta.style.backgroundColor = "#be8402";
             _tarjeta.style.color = letrasClaras;break;
             case 18: _tarjeta.style.backgroundColor = "#1cb3ad";
@@ -80,6 +80,46 @@ const Hero = () => {
             case 19: _tarjeta.style.backgroundColor = "#03049c";
             _tarjeta.style.color = letrasClaras;break;
             case 20: _tarjeta.style.backgroundColor = "#b75104";
+            _tarjeta.style.color = letrasClaras;break;
+            case 21: _tarjeta.style.backgroundColor = "#326126";
+            _tarjeta.style.color = letrasClaras;break;
+            case 22: _tarjeta.style.backgroundColor = "#1749ff";
+            _tarjeta.style.color = letrasClaras;break;
+            case 23: _tarjeta.style.backgroundColor = "#00706b";
+            _tarjeta.style.color = letrasClaras;break;
+            case 24: _tarjeta.style.backgroundColor = "#d3d73e";
+            _tarjeta.style.color = letrasOscuras;break;
+            case 25: _tarjeta.style.backgroundColor = "#8e05ac";
+            _tarjeta.style.color = letrasOscuras;break;
+            case 26: _tarjeta.style.backgroundColor = "#ff4e46";
+            _tarjeta.style.color = letrasOscuras;break;
+            case 27: _tarjeta.style.backgroundColor = "#4f3a2c";
+            _tarjeta.style.color = letrasClaras;break;
+            case 28: _tarjeta.style.backgroundColor = "#5d7cd5";
+            _tarjeta.style.color = letrasOscuras;break;
+            case 29: _tarjeta.style.backgroundColor = "#6e9a4e";
+            _tarjeta.style.color = letrasOscuras;break;
+            case 30: _tarjeta.style.backgroundColor = "#bcefb4";
+            _tarjeta.style.color = letrasOscuras;break;
+            case 31: _tarjeta.style.backgroundColor = "#afcb18";
+            _tarjeta.style.color = letrasOscuras;break;
+            case 32: _tarjeta.style.backgroundColor = "#addf74";
+            _tarjeta.style.color = letrasOscuras;break;
+            case 33: _tarjeta.style.backgroundColor = "#a51fa7";
+            _tarjeta.style.color = letrasClaras;break;
+            case 34: _tarjeta.style.backgroundColor = "#fa835d";
+            _tarjeta.style.color = letrasOscuras;break;
+            case 35: _tarjeta.style.backgroundColor = "#72561d";
+            _tarjeta.style.color = letrasClaras;break;
+            case 36: _tarjeta.style.backgroundColor = "#939923";
+            _tarjeta.style.color = letrasClaras;break;
+            case 37: _tarjeta.style.backgroundColor = "#f69d72";
+            _tarjeta.style.color = letrasOscuras;break;
+            case 38: _tarjeta.style.backgroundColor = "#7a2237";
+            _tarjeta.style.color = letrasClaras;break;
+            case 39: _tarjeta.style.backgroundColor = "#4be01e";
+            _tarjeta.style.color = letrasOscuras;break;
+            case 40: _tarjeta.style.backgroundColor = "#0ca8ab";
             _tarjeta.style.color = letrasClaras;break;
             default: _tarjeta.style.backgroundColor = "#bc0035";
             _tarjeta.style.color = letrasClaras;break;
@@ -101,15 +141,15 @@ const Hero = () => {
           <div className="card my-4 mx-auto p-2" id="tarjeta" style={{width: 18 + 'em'}}>
               <img src={personaje.image} className="card-img-top" alt="Personaje de Rick and Morty"></img>
               <div className="card-body">
-                  <h2 className="card-title">{personaje.name}</h2>
+                  <h4 className="card-title">{personaje.name}</h4>
                   <h6>Species: {personaje.species}</h6>
                   <h6>Status: {personaje.status}</h6>
                   <h6 className="card-title">Gender: {personaje.gender}</h6>
                   <h6>Origin: {personaje.origin.name}</h6>
                   <h6>Location: {personaje.location.name}</h6>
                   <p className="card-text"></p>
-                  <div class="btn-group" role="group" aria-label="Basic example">
-                      <button type="button" class="btn btn-dark" onClick={cambiarPersonaje}>Change</button>
+                  <div className="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" className="btn btn-dark" onClick={cambiarPersonaje}>Change</button>
                   </div>
               </div>
           </div>
